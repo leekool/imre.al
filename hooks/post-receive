@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# If on the main or dev branches, checkout the current version of
+# this project to the ~/raw folder and, if a project script exists,
+# runs 'project build'.
+
+project=`basename "$PWD" .git`
+
+while read oldrev newrev ref; do
+    if [ `git rev-parse --abbrev-ref $ref` = "main" ]; then
+        worktree=~/raw/$project
+
+        mkdir -p $worktree
+        GIT_WORK_TREE=$worktree git checkout -f main
+        echo Changes pushed to $worktree
+
+        projscript=$worktree/project
+
+        if [ -f "$projscript" ]; then
+            echo Building project
+            $projscript build
+        fi
+    fi
+done
