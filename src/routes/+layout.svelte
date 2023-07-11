@@ -3,9 +3,6 @@
     import { page } from "$app/stores";
     import { onMount } from "svelte";
 
-    export const prerender = true;
-    // export const trailingSlash = 'always';
-
     export let data;
 
     onMount(() => {
