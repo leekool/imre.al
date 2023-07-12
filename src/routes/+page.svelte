@@ -2,7 +2,7 @@
 </script>
 
 <div id="content">
-    <h1>test</h1>
+    <h1>Lee Luppi</h1>
     <ul>
         <li>
             <a href="/contact">Contact</a>

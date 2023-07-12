@@ -1,6 +1,13 @@
-# Test
+---
+title: contact
+---
 
-**test**
+<svelte:head>
+    <title>imre.al - contact</title>
+    <meta property="og:title" content="contact" />
+</svelte:head>
 
-- Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
-- Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint conupidatat.
+# Contact
+
+## Email
+```lee@imre.al```
