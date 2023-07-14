@@ -17,8 +17,8 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			pages: 'docs',
-			assets: 'docs',
+			pages: 'lee_blog',
+			assets: 'lee_blog',
 			fallback: undefined,
 			precompress: false,
 			strict: true

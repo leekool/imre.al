@@ -1,3 +1,5 @@
+export const prerender = true;
+
 export async function load({ params }: any) {
     const post = await import(`../${params.slug}.md`);
     const title = post.metadata?.title ?? '';
