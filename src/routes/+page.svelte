@@ -2,6 +2,10 @@
     export let data;
 </script>
 
+<svelte:head>
+    <title>imre.al</title>
+</svelte:head>
+
 <div id="main" class="content">
     <div class="blog-posts">
         <ul>
