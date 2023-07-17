@@ -67,18 +67,22 @@ body {
 }
 
 h1 {
+    font-size: 1.8rem;
     color: #78b0d3;
 }
 
 h2 {
+    font-size: 1.4rem;
     color: #97ef9f;
 }
 
 h3 {
+    font-size: 1.15rem;
     color: #f9c686;
 }
 
 h4 {
+    font-size: 1.1rem;
     color: #aa89d6;
 }
 
@@ -105,36 +109,20 @@ h1:not(:first-child), h2:not(:first-child), h3:not(:first-child), h4:not(:first-
     margin-top: .75rem
 }
 
-h1 {
-    font-size: 1.8rem
-}
-
-h2 {
-    font-size: 1.4rem
-}
-
-h3 {
-    font-size: 1.15rem
-}
-
-h4 {
-    font-size: 1.1rem
-}
-
 p {
     text-align: justify
 }
 
 a {
-    color: #193b5d
+    color: #78b0d3;
 }
 
 a:visited {
-    color: #193b5d
+    color: #db538e;
 }
 
 a.clean-link {
-    color: #db538e;
+    color: #78b0d3;
     text-decoration: none
 }
 

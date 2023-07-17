@@ -19,7 +19,11 @@
 
 <footer>
     <div class="layout">
-        <div />
+        <div>
+            <a class="link" href="/">
+                Lee Luppi - Brain Dump
+            </a>
+        </div>
         <div>
             <a class="icon-link" title="Contact" href="mailto:lee@imre.al">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -86,5 +90,16 @@
     footer .layout {
         display: flex;
         justify-content: space-between;
+    }
+
+    footer .link {
+        /* font-family: "Berkeley Mono", monospace; */
+        font-size: 0.8rem;
+        color: #5c6166;
+        text-decoration: none;
+    }
+
+    footer .link:hover {
+        text-decoration: underline;
     }
 </style>
