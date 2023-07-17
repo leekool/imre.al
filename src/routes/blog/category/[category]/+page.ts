@@ -1,4 +1,6 @@
-export const load = async ({ fetch, params }: any) => {
+import type { Load } from "@sveltejs/kit";
+
+export const load: Load = async ({ fetch, params }) => {
     const { category } = params;
     const response = await fetch('/api/posts');
     const allPosts = await response.json();

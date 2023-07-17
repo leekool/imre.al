@@ -1,0 +1,2 @@
+import{s as r,n as s}from"./scheduler.e108d1fd.js";import{S as l,i,g as m,h as c,x as d,a as p,f}from"./index.a3c98c77.js";function u(n){let t,a=`hello, test
+<strong>test</strong>`;return{c(){t=m("p"),t.innerHTML=a},l(e){t=c(e,"P",{"data-svelte-h":!0}),d(t)!=="svelte-1inml2v"&&(t.innerHTML=a)},m(e,o){p(e,t,o)},p:s,i:s,o:s,d(e){e&&f(t)}}}const h={title:"test post",date:"2023-07-12",category:"3d"};class v extends l{constructor(t){super(),i(this,t,null,u,r,{})}}export{v as default,h as metadata};
