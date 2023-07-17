@@ -38,6 +38,31 @@
         padding-right: 1rem;
     }
 
+    .article-metadata {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .article-content {
+        margin-top: 2rem;
+    }
+
+    .article-content ul,
+    .article-content ol {
+        list-style-position: inside;
+        list-style-type: "– ";
+    }
+
+    .article-content ul > li:not(:first-of-type),
+    .article-content ol > li:not(:first-of-type) {
+        margin-top: 0.25rem;
+    }
+
+    .article-content ul > li > ul,
+    .article-content ol > li > ul {
+        margin-left: 1rem;
+    }
+
     .tags {
         font-family: "Berkeley Mono", monospace;
         font-size: 0.8rem;
