@@ -1,8 +1,19 @@
 ---
-title: test post
-date: "2023-07-12"
+title:  Ploopy Nano CY-8H BTU Mod
+date: "2023-07-17"
 category: "3d"
 ---
 
-hello, test
-**test**
+Roughly a year ago, I purchased a [Ploopy Nano](https://ploopy.co/nano-trackball) second-hand on a whim as I was curious about trackballs, having experienced slight pain in my right hand presumably from constantly switching between mouse and keyboard. It replaced my mouse immediately and I still use it 90% of the time.
+
+I kept hearing online how omnidirectional ball transfer units make for better bearings for the roller baller than the classic roller bearings that come in the Ploopy Nano kit. The most commonly used BTUs are [Bosch-Rexroth R053010810](https://store.boschrexroth.com/apex/ccrz__ProductDetails?cclcl=en_US&seoid=Ball-Roll_R053010810&sku=R053010810), and someone has already designed a a new top half for the Ploopy Nano to utilise them ([Ploopy BTU Mod](https://github.com/gbrnt/ploopy-nano/tree/master/hardware/mechanicals-btu-mod)), however these BTUs are just about unobtainable in Australia. No Australian online retailer I could find will sell them, and it looks like only a few wholesalers (who will only sell to businesses) may have them. There was one European retailer that would ship to Australia. However, if I remember correctly, the shipping costs would be roughly three times the cost of the BTUs, which are already expensive.
+
+Giving up on finding Bosch BTUs, but still too keen to experience what they're like, I turned to AliExpress. I initially bought a set of 7.5mm and 9mm [Veichu](https://www.aliexpress.com/item/1005003066404497.html) BTUs that it seems people normally turn to when they can't find quality Bosch ones.
+
+At this point I started designing a model to hold the BTUs. I didn't want to take the route of only redesigning the top half as after taking the Nano apart, I realised it should be possible to make the ball sit lower on the desk, which I thought should make it more comfortable to use, if only slightly. This turned out to be a bigger job than expected as the model had to perfectly hold the Nano PCB and the trackball had to sit properly aligned above the sensor. It took about eight iterations to get correct, and I had only managed to make the trackball sit roughly 4mm lower than the original model.
+
+The Veichu BTUs were awful. I found them to be incredibly scratchy and to have more resistance than the original roller bearings. The original roller bearings were by far better to use. After spending so much time designing the model, I thought it'd be a waste of time to give up here and considered looking for someone overseas to get me some Bosch BTUs or to cave and pay a high price for them. That's when I stumbled across the [CY-8H Carbon Steel](https://www.aliexpress.com/item/1005004782384210.html) BTU on AliExpress. I was drawn to them as their diagram shows just one bearing ball inside the BTU that rolls the bigger ball (although I suspect there are more inside), and I thought this may make them less scratchy than the Veichu BTUs.
+
+cy-8h btu diagram image
+
+Another few iterations later and I had a functional CY-8H trackball. These BTUs felt leagues ahead of Veichu BTUs, and were a bit smoother yet just as quiet as roller bearings. In the end, my Ploopy Nano housing sits a barely noticable amount lower than the original, has a slightly smaller footprint, and utilises these BTUs. Was it worth it? Probably not because it's only sent me down a trackball rabbit hole and I'm still curious about those Bosch BTUs, I've considered having other trackball PCBs such as [jfedor2](https://github.com/jfedor2/rp2040-pmw3360)'s manufactured, and also considered building keyboards that have trackballs built-in, such as the [ximi](https://fingerpunch.xyz/product/ximi/). I'm happy I've taken something and customised it to be almost entirely my own, but I don't think I'll truly be satisfied until it's entirely my own.
