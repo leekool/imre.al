@@ -1,10 +1,5 @@
-import type { Load } from "@sveltejs/kit";
+import { redirect } from "@sveltejs/kit";
 
-export const prerender = true;
-
-export const load: Load = async ({ fetch }) => {
-    const response = await fetch('/api/posts');
-    const posts = await response.json();
-    
-    return { posts };
+export function load() {
+    throw redirect(307, '/');
 }
