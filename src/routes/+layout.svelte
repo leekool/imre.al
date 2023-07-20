@@ -10,7 +10,7 @@
 
 <header>
     <div class="layout">
-        <a id="site-title" class="clean-link" href="/">Brain Dump</a
+        <a id="site-title" class="clean-link" href="/">brain dump</a
         >
     </div>
 </header>
@@ -21,7 +21,7 @@
     <div class="layout">
         <div>
             <a class="link" href="/">
-                Lee Luppi - Brain Dump
+                lee luppi
             </a>
         </div>
         <div>
