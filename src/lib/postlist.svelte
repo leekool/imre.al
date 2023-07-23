@@ -1,5 +1,20 @@
+<script lang="ts" context="module">
+    interface Post {
+        meta: {
+            title: string;
+            date: string;
+            category: string;
+        };
+        path: string;
+    }
+
+    export interface Data {
+        posts: Post[];
+    }
+</script>
+
 <script lang="ts">
-    export let data: any;
+    export let data: Data;
 </script>
 
 <div id="main" class="content">
@@ -10,7 +25,12 @@
                     <time datetime={post.meta.date}>{post.meta.date}</time>
                     <a class="clean-link" href={post.path}>{post.meta.title}</a>
                     <span class="tags">
-                        <a class="tag" href="/blog/category/{post.meta.category}">{post.meta.category}</a>
+                        <a
+                            class="tag"
+                            href="/blog/category/{post.meta.category}"
+                        >
+                            {post.meta.category}
+                        </a>
                     </span>
                 </li>
             {/each}
