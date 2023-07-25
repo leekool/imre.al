@@ -15,6 +15,16 @@
 
 <script lang="ts">
     export let data: Data;
+
+    const getLongDate = (date: string) => {
+        const dateOptions: Intl.DateTimeFormatOptions = {
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+        };
+
+        return new Date(date).toLocaleString("en-GB", dateOptions);
+    };
 </script>
 
 <div id="main" class="content">
@@ -22,7 +32,9 @@
         <ul>
             {#each data.posts as post}
                 <li>
-                    <time datetime={post.meta.date}>{post.meta.date}</time>
+                    <time datetime={post.meta.date}
+                        >{getLongDate(post.meta.date)}</time
+                    >
                     <a class="clean-link" href={post.path}>{post.meta.title}</a>
                     <span class="tags">
                         <a
