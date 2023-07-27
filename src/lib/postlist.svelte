@@ -19,7 +19,7 @@
     const getLongDate = (date: string) => {
         const dateOptions: Intl.DateTimeFormatOptions = {
             day: "numeric",
-            month: "long",
+            month: "short",
             year: "numeric"
         };
 
