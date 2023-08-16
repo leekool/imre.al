@@ -20,7 +20,7 @@
         const dateOptions: Intl.DateTimeFormatOptions = {
             day: "numeric",
             month: "short",
-            year: "numeric"
+            year: "numeric",
         };
 
         return new Date(date).toLocaleString("en-GB", dateOptions);
@@ -32,15 +32,10 @@
         <ul>
             {#each data.posts as post}
                 <li>
-                    <time datetime={post.meta.date}
-                        >{getLongDate(post.meta.date)}</time
-                    >
+                    <time datetime={post.meta.date}>{getLongDate(post.meta.date)}</time>
                     <a class="clean-link" href={post.path}>{post.meta.title}</a>
                     <span class="tags">
-                        <a
-                            class="tag"
-                            href="/blog/category/{post.meta.category}"
-                        >
+                        <a class="tag" href="/blog/category/{post.meta.category}">
                             {post.meta.category}
                         </a>
                     </span>
