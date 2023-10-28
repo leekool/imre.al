@@ -10,8 +10,9 @@
 
 <header>
     <div class="layout">
-        <a id="site-title" class="clean-link" href="/">brain dump</a
-        >
+        <a id="site-title" class="clean-link" href="/">
+            <img src="header.png" alt="header">
+        </a>
     </div>
 </header>
 
